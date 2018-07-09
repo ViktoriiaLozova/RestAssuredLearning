@@ -1,0 +1,12 @@
+{
+  "RestResponse": {
+    "messages": [
+      "Country found matching code [{{alpha2_code}}]."
+    ],
+    "result": {
+      "name": "{{name}}",
+      "alpha2_code": "{{alpha2_code}}",
+      "alpha3_code": "{{alpha3_code}}"
+    }
+  }
+}
