@@ -33,5 +33,13 @@ public class CountriesKeywords extends BaseKeyword<MyProjectKeywordManager> {
         return keywordManager;
     }
 
+    @Step
+    public MyProjectKeywordManager getIncorrectIsoCode(String alpha2_code) {
+        Response response = given()
+                .when().get("/get/$%%$#//{alpha2_code}", alpha2_code);
+        rememberRestAssuredResponse(response);
+        return keywordManager;
+    }
+
 
 }
